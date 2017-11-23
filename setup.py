@@ -11,7 +11,7 @@ with open(path.join(here, 'README.md')) as f:
 setup(
     name='pyOptional',
     use_scm_version=True,
-    description='Smart object for mocking open file calls, depends on file path',
+    description='Library provided implementation Optional object similar to Java optional. Using this object, You will never check "if x is None"',
     long_description=long_description,
     url='https://github.com/PawelJ-PL/pyOptional',
     author='Pawel',
