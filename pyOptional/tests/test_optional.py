@@ -68,7 +68,7 @@ class TestOptional(TestCase):
         opt = Optional('ABC')
 
         # when
-        result = opt.get_or_else_get(lambda: 'XYZ')
+        result = opt.get_or_call(lambda: 'XYZ')
 
         # then
         self.assertEqual(result, 'ABC')
@@ -78,7 +78,7 @@ class TestOptional(TestCase):
         opt = Optional(None)
 
         # when
-        result = opt.get_or_else_get(lambda: 'XYZ')
+        result = opt.get_or_call(lambda: 'XYZ')
 
         # then
         self.assertEqual(result, 'XYZ')

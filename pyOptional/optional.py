@@ -16,7 +16,7 @@ class Optional:
         except NoneValueError:
             return default
 
-    def get_or_else_get(self, default_callable: callable):
+    def get_or_call(self, default_callable: callable):
         try:
             return self.get()
         except NoneValueError:

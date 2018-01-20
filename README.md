@@ -56,15 +56,15 @@ ABC
 XYZ
 ```
 
-#### get_or_else_get(callable_for_generate_default_value)
+#### get_or_call(callable_for_generate_default_value)
 Returns value if exists, otherwise result of `callable_for_generate_default_value`
 ```python
 def gen_value():
     return 'QWERTY'
 
-print(optional_with_value.get_or_else_get(gen_value))
-print(optional_empty.get_or_else_get(gen_value))
-print(optional_empty.get_or_else_get(lambda: 'From lambda'))
+print(optional_with_value.get_or_call(gen_value))
+print(optional_empty.get_or_call(gen_value))
+print(optional_empty.get_or_call(lambda: 'From lambda'))
 ```
 
 **output**:
