@@ -68,4 +68,8 @@ class Optional:
     def __ne__(self, o: object) -> bool:
         return not self.__eq__(o)
 
+    @staticmethod
+    def empty():
+        return Optional(None)
+
 

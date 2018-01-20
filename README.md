@@ -157,3 +157,17 @@ print(optional_empty.is_present())
 True
 False
 ```
+
+### Static Methods:
+
+#### empty()
+return an empty Optional
+
+```python
+print(Optional.empty())
+```
+
+**output**:
+```
+Optional empty
+```
