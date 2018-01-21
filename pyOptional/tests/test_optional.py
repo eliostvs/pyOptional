@@ -233,3 +233,14 @@ class TestOptional(TestCase):
 
         # then
         self.assertFalse(result)
+
+    def test_should_return_true_for_empty_and_none_optionals(self):
+        # given
+        opt1 = Optional.empty()
+        opt2 = Optional(None)
+
+        # when
+        result = opt1 == opt2
+
+        # then
+        self.assertTrue(result)

@@ -201,3 +201,21 @@ return True if Optional not empty, otherwise False
 
     True
     False
+
+Static Methods:
+~~~~~~~~~~~~~~~
+
+empty()
+^^^^^^^
+
+return an empty Optional
+
+.. code:: python
+
+    print(Optional.empty())
+
+**output**:
+
+::
+
+    Optional empty
