@@ -1,12 +1,22 @@
 from os import path
 from setuptools import setup, find_packages
 
-
 here = path.abspath(path.dirname(__file__))
 
 with open(path.join(here, 'README.rst')) as f:
     long_description = f.read()
 
+tests_requires = [
+    'pytest',
+    'pytest-flake8',
+    'pytest-cov',
+    'pytest-mypy'
+]
+
+setup_requires = [
+    'pytest-runner',
+    'setuptools_scm'
+]
 
 setup(
     name='pyOptional',
@@ -29,7 +39,7 @@ setup(
     extras_require={
         'test': ['coverage'],
     },
-    setup_requires=['setuptools_scm'],
+    setup_requires=setup_requires,
+    tests_require=tests_requires,
     python_requires='>=3',
-
 )
