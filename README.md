@@ -11,7 +11,7 @@ Library provided implementation Optional object similar to [Java optional](https
 ### Examples
 
 ```python
-from pyOptional.optional import Optional
+from pyOptional import Optional
 
 optional_with_value = Optional('ABC')
 optional_empty = Optional(None)
